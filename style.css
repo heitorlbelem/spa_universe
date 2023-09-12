@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+body,
+button,
+a {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+body {
+  font-size: 1.6rem;
+  height: 100vh;
+}
+
+#bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+nav {
+  padding: 4rem 7.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+nav a {
+  color: #c4c4cc;
+  font-size: 2.1rem;
+  line-height: 2.1rem;
+  text-decoration: none;
+
+  &.selected {
+    color: #fff;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 2.1rem;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+h2 {
+  color: #e1e1e6;
+  font-size: 4.8rem;
+  line-height: 6rem;
+}
+
+/* HOME */
+
+.home {
+  text-align: center;
+  margin-top: 17.2rem;
+
+  & > button {
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    margin-top: 2.4rem;
+    padding: 1.2rem 3.2rem;
+    border: 1px solid white;
+    border-radius: 8px;
+
+    transition: background-color 0.2s;
+
+    &:hover {
+      color: #02799d;
+      background-color: #fff;
+    }
+  }
+}
+
+/* UNIVERSE e EXPLORATION */
+.container {
+  margin-top: 6.4rem;
+  padding-left: 10rem;
+
+  & > h2 {
+    margin-bottom: 1.6rem;
+  }
+
+  & > p {
+    color: #e1e1e6;
+    font-size: 1.8rem;
+    line-height: 2.88rem;
+
+    width: 65rem;
+  }
+}
